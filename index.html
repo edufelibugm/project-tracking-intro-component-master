@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- GOOGLE FONTS LINKS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <!--
+    font-family: 'Barlow Condensed', sans-serif;
+    Weights: 400, 700
+  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <!--
+    font-family: 'Barlow', sans-serif;
+    Weights: 400
+  -->
+
+  <!-- CSS STYLESHEETS -->
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+
+</head>
+<body>
+
+  <!-- MAIN SECTION START -->
+  <main>
+
+    <!-- NAVEGATION SECTION START -->
+    <nav class="navegation">
+
+      <img src="images/logo.svg" alt="image-logo" class="logo">
+
+      <ul class="menu">
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Features</a>
+        </li>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Login</a>
+        </li>
+      </ul>
+
+      <div class="mobile desplegable-menu"></div>
+
+    </nav>
+    <!-- NAVEGATION SECTION END -->
+
+    <div class="hero-bg"></div>
+
+    <!-- MAIN CONTENT START -->
+    <article class="main-content">
+
+      <section class="main-info">
+
+        <p class="monograph-p"><span>New</span> Monograph Dashboard</p>
+        <h1>Powerful insights into your team</h1>
+        <p>Project planning and time tracking for agile teams</p>
+  
+        <div>
+          <button>Schedule a demo</button>
+  
+          <a href="#">to see a preview</a>
+        </div>
+  
+      </section>
+      
+      <section class="image">
+        <img src="images/illustration-devices.svg" alt="">
+      </section>
+
+    </article>
+    <!-- MAIN CONTENT END -->
+
+  </main>
+  <!-- MAIN SECTION END -->
+
+  <script>
+    document.querySelector('.desplegable-menu').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('visible');
+      document.querySelector('.desplegable-menu').classList.toggle('change')
+    });
+  </script>
+
+</body>
+</html>
